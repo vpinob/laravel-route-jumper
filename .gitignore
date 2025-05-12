@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Build outputs
+out/
+dist/
+*.vsix
+
+# VS Code test and workspace files
+.vscode-test/
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary editor files
+*.swp
+
+# Ignore .vscodeignore since it's used for publishing
+.vscodeignore
+
+# Ignore VS Code test file
+.vscode-test.mjs
