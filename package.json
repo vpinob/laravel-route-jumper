@@ -2,7 +2,7 @@
     "name": "laravel-route-jumper",
     "displayName": "Laravel Route Jumper",
     "description": "Jump from route() calls in Laravel to route definitions.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "vpinob",
     "engines": {
         "vscode": "^1.100.0"
@@ -24,7 +24,8 @@
         "url": "https://github.com/vpinob/laravel-route-jumper"
     },
     "activationEvents": [
-        "onCommand:laravel-route-jumper.jumpToRoute"
+        "onCommand:laravel-route-jumper.jumpToRoute",
+        "onLanguage:php"
     ],
     "main": "./out/extension.js",
     "contributes": {
