@@ -1,15 +1,30 @@
 {
     "name": "laravel-route-jumper",
-    "displayName": "laravel-route-jumper",
+    "displayName": "Laravel Route Jumper",
     "description": "Jump from route() calls in Laravel to route definitions.",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "publisher": "vpinob",
     "engines": {
         "vscode": "^1.100.0"
     },
     "categories": [
+        "Programming Languages",
         "Other"
     ],
+    "icon": "images/icon.png",
+    "keywords": [
+        "laravel",
+        "route",
+        "php",
+        "blade",
+        "navigation"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vpinob/laravel-route-jumper"
+    },
     "activationEvents": [
+        "onCommand:laravel-route-jumper.jumpToRoute"
     ],
     "main": "./out/extension.js",
     "contributes": {
@@ -24,6 +39,13 @@
             "editor/context": [
                 {
                     "command": "laravel-route-jumper.jumpToRoute",
+                    "when": "editorLangId == php || editorLangId == blade",
+                    "group": "navigation@1"
+                }
+            ],
+            "commandPalette": [
+                {
+                    "command": "laravel-route-jumper.jumpToRoute",
                     "when": "editorLangId == php || editorLangId == blade"
                 }
             ]
@@ -34,7 +56,7 @@
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
         "pretest": "npm run compile && npm run lint",
-        "lint": "eslint src",
+        "lint": "eslint src --ext .ts,.tsx",
         "test": "vscode-test"
     },
     "devDependencies": {
@@ -47,12 +69,5 @@
         "typescript": "^5.8.3",
         "@vscode/test-cli": "^0.0.10",
         "@vscode/test-electron": "^2.5.2"
-    },
-    "publisher": "vpbetancourt",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/vpbetancourt/laravel-route-jumper"
-    },
-    "icon": "images/icon.png",
-    "keywords": ["laravel", "route", "php", "blade"]
+    }
 }

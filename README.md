@@ -1,8 +1,8 @@
 # Laravel Route Jumper 🚀
 
-[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/vpbetancourt.laravel-route-jumper)](https://marketplace.visualstudio.com/items?itemName=vpbetancourt.laravel-route-jumper)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/vpbetancourt.laravel-route-jumper)](https://marketplace.visualstudio.com/items?itemName=vpbetancourt.laravel-route-jumper)
-[![License](https://img.shields.io/github/license/vpbetancourt/laravel-route-jumper)](LICENSE)
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/vpinob.laravel-route-jumper)](https://marketplace.visualstudio.com/items?itemName=vpinob.laravel-route-jumper)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/vpinob.laravel-route-jumper)](https://marketplace.visualstudio.com/items?itemName=vpinob.laravel-route-jumper)
+[![License](https://img.shields.io/github/license/vpinob/laravel-route-jumper)](LICENSE)
 
 **Jump seamlessly between Laravel route references and their definitions** - right from your Blade templates or controllers to `routes/*.php` files.
 
@@ -37,4 +37,4 @@
 
 ### **Method 2: CLI Installation**
 ```bash
-code --install-extension vpbetancourt.laravel-route-jumper
+code --install-extension vpinob.laravel-route-jumper
